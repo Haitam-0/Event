@@ -43,9 +43,8 @@ img {
 
 
 /* Image styling *//* Image styling *//* Image styling *//* Image styling *//* Image styling */
-
 .img {
-    background: url('../../Component/Pictures/beach.jpg') center/cover no-repeat;
+    background: url('../../components//Pictures//beach.jpg') center/cover no-repeat;
     height:90vh; 
     display: flex;
     justify-content: center;
