@@ -1,0 +1,72 @@
+.NAV {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.LOGO img {
+    width: 20px; 
+    height: auto;
+}
+
+
+.Containe {
+    display: flex;
+    align-items: flex-start; /* Align to the left */
+    justify-content: flex-start; /* Align to the top */
+    gap: 30px; /* Add space between links */
+    margin-right: 35rem;
+}
+
+.Containe a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.Containe a:hover {
+    color: #f0a500;
+}
+.Icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.Icons img:hover {
+    transform: scale(1.1);
+}
+
+.Icons p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .NAV {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Containe {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Icons {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,147 @@
+/* Footer General Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 60px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer-section p:hover {
+    text-decoration: underline;
+  }
+  
+  /* Newsletter Section */
+  .footer-newsletter {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .footer-newsletter p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .newsletter-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .newsletter-input button {
+    background-color: #5548d9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .newsletter-input button:hover {
+    background-color: #463ab5;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 20px 0;
+    border: 0.5px solid #ddd;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #5548d9;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Icons */
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-icons i {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons i:hover {
+    color: #5548d9;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-newsletter {
+      margin-top: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
