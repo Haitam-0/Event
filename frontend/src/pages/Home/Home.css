@@ -1,9 +1,7 @@
-/* Center all content in Home */
 .Home-container {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-
 
 .h1 {
   font-size: 24px;
@@ -12,23 +10,21 @@
   text-align: center;
 }
 
-/* Review section */
 .review-container {
-    display: flex;
-    justify-content: center; /* Center reviews horizontally */
-    gap: 20px; /* Space between reviews */
-    flex-wrap: wrap; /* Allows responsiveness */
-    margin-top: 20px;
-    width: 100%; /* Ensure the container takes the full width */
-    max-width: 1200px; /* Limit the max width for better responsiveness */
-    margin-left: auto;  /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Image styling */
 img {
-    width: 150px;
-    height: 200px;
+  width: 150px;
+  height: 200px;
 }
 
 .no-underline {
@@ -36,59 +32,88 @@ img {
   color: black;
 }
 
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.event-list a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.event-list a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;  /* Ensure all cards stretch equally */
+  min-height: 250px; /* Set a minimum height */
+}
 
 
-
-/* Image styling *//* Image styling *//* Image styling *//* Image styling *//* Image styling */
+.event-list p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+  padding: 20px;
+}
 
 .img {
-    background: url('../../Component/Pictures/beach.jpg') center/cover no-repeat;
-    height:90vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .input-search {
-    display: flex;
-    align-items: center;
-    background: white;
-    border-radius: 30px;
-    padding: 5px 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 550px;
-  }
-  
-  /* Input Field */
-  .input-search input {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    padding: 8px;
-    width: 100%;
-    border-radius: 30px;
-  }
-  
-  /* Search Icon */
-  .input-search::after {
-    content: "🔍";
-    font-size: 16px;
-    color: white;
-    background-color: #5548d9;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
+  background: url('../../../../backend/public/marriage1.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  padding: 5px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+}
+
+.input-search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.input-search::after {
+  content: "🔍";
+  font-size: 16px;
+  color: white;
+  background-color: #5548d9;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}

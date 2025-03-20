@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Marriage",
+    "description": "A beautiful wedding event",
+    "picture": "wedding.jpg",
+    "comment": "Exciting day!",
+    "serviceToCall": ["Robe", "Catering", "Photography", "Decoration", "Music Band"]
+  },
+  {
+    "id": 2,
+    "title": "Funeral",
+    "description": "A respectful farewell ceremony",
+    "picture": "funeral.jpg",
+    "comment": "Honoring a loved one",
+    "serviceToCall": ["Catering", "Decoration"]
+  },
+  {
+    "id": 3,
+    "title": "Birthday",
+    "description": "A joyful birthday celebration",
+    "picture": "birthday.jpg",
+    "comment": "A special day for loved ones",
+    "serviceToCall": ["Cake", "Music Band", "Photography", "Decoration"]
+  },
+  {
+    "id": 4,
+    "title": "Fête Personnalisée",
+    "description": "A customized event for any special occasion",
+    "picture": "custom_party.jpg",
+    "comment": "Make it your own!",
+    "serviceToCall": ["Decoration", "Catering", "DJ"]
+  },
+  {
+    "id": 5,
+    "title": "Baptême",
+    "description": "A sacred and joyful baptism ceremony",
+    "picture": "baptism.jpg",
+    "comment": "A new beginning",
+    "serviceToCall": ["Robe", "Photography", "Decoration", "Catering"]
+  }
+]

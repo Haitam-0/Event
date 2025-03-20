@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Robe",
+    "color": "White",
+    "size": "M",
+    "price": 150,
+    "description": "Elegant wedding dress",
+    "type": ["wedding"]
+  },
+  {
+    "id": 2,
+    "name": "Catering",
+    "description": "Full event catering service",
+    "price": 500,
+    "type": ["wedding", "birthday", "party", "baptem", "funerale"]
+  },
+  {
+    "id": 3,
+    "name": "Photography",
+    "description": "Professional photography for events",
+    "price": 300,
+    "type": ["wedding", "birthday", "party", "baptem"]
+  },
+  {
+    "id": 4,
+    "name": "Decoration",
+    "description": "Complete event decoration setup",
+    "price": 400,
+    "type": ["wedding", "birthday", "party", "baptem"]
+  },
+  {
+    "id": 5,
+    "name": "Music Band",
+    "description": "Live music performance for events",
+    "price": 600,
+    "type": ["wedding", "birthday", "party"]
+  }
+]
