@@ -25,18 +25,19 @@ const getEvent = asyncHandler(async (req, res, next) => {
 // @route POST /api/events
 // @access Public
 const createEvent = asyncHandler(async (req, res, next) => {
-    const { name, date, location, description } = req.body;
+    const { name, description, picture, feedback, serviceToCall } = req.body;
 
-    if (!name || !date || !location) {
+    if (!name || !picture) {
         res.status(400);
-        return next(new Error("Name, date, and location are required!"));
+        return next(new Error("Name and picture are required!"));
     }
 
     const event = await Event.create({
         name,
-        date,
-        location,
         description,
+        picture,
+        feedback,
+        serviceToCall,
     });
 
     res.status(201).json({ message: "Event created successfully", event });

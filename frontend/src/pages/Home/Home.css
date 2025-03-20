@@ -61,11 +61,10 @@ img {
 }
 
 
-<<<<<<< HEAD
 
 /* Image styling *//* Image styling *//* Image styling *//* Image styling *//* Image styling */
 .img {
-    background: url('../../components//Pictures//beach.jpg') center/cover no-repeat;
+    background: url('http://localhost:5000/public/main.jpg') center/cover no-repeat;
     height:90vh; 
     display: flex;
     justify-content: center;
@@ -115,61 +114,3 @@ img {
     cursor: pointer;
   }
   
-=======
-.event-list p {
-  text-align: center;
-  font-size: 18px;
-  color: #555;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.img {
-  background: url('../../../../backend/public/marriage1.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.input-search {
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 30px;
-  padding: 5px 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 550px;
-}
-
-.input-search input {
-  border: none;
-  outline: none;
-  font-size: 16px;
-  padding: 8px;
-  width: 100%;
-  border-radius: 30px;
-}
-
-.input-search::after {
-  content: "🔍";
-  font-size: 16px;
-  color: white;
-  background-color: #5548d9;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  cursor: pointer;
-}
->>>>>>> 4162428dde36f612ab39d0b01d280cc36ba3e310

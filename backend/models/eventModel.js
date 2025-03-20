@@ -6,17 +6,21 @@ const eventSchema = mongoose.Schema(
             type: String,
             required: [true, "Please enter the event name"],
         },
-        date: {
-            type: Date,
-            required: [true, "Please enter the event date"],
-        },
-        location: {
-            type: String,
-            required: [true, "Please enter the event location"],
-        },
         description: {
             type: String,
             default: "",
+        },
+        picture: {
+            type: String,
+            required: [true, "Please provide an event picture"],
+        },
+        feedback: {
+            type: String,
+            default: "",
+        },
+        serviceToCall: {
+            type: [String], // Array of service names
+            default: [],
         }
     },
     {

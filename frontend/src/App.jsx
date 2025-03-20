@@ -2,7 +2,7 @@ import { BrowserRouter ,Route,Routes} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
-import Events from "./pages/Events/Events"
+import Details_event from "./pages/Details_event/Detail_event"
 import './App.css';
 
 function App(){
@@ -12,7 +12,7 @@ function App(){
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/events" element={<Events/>}/>
+          <Route path="/Details_event/:id" element={<Details_event/>}/>
 
         </Routes>
         <Footer/>

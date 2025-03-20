@@ -1,17 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
-const path = require("path");
+const {
+    getEvent,
+    getEvents,
+    updateEvent,
+    deleteEvent,
+    createEvent
+} = require("../controllers/EventController");
 
-router.get("/", (req, res) => {
-    const eventsPath = path.join(__dirname, "../data/event.json");
-    fs.readFile(eventsPath, "utf-8", (err, data) => {
-        if (err) {
-            res.status(500).json({ error: "Failed to load events" });
-        } else {
-            res.json(JSON.parse(data));
-        }
-    });
-});
+// Définition correcte des routes
+router.route("/").get(getEvents).post(createEvent);
+router.route("/:id").get(getEvent).put(updateEvent).delete(deleteEvent);
 
 module.exports = router;

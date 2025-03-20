@@ -3,7 +3,7 @@
       "name": "Marriage",
       "description": "A beautiful wedding event",
       "picture": "wedding.jpg",
-      "comment": "Exciting day!",
+      "feedback": "Exciting day!",
       "serviceToCall": ["Robe", "Catering", "Photography", "Decoration", "Music Band"]
     },
     {
