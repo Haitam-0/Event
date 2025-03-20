@@ -4,19 +4,12 @@
     padding: 20px;
 }
 
-/* Card section */
-.Card-container {
-    display: flex;
-    justify-content: center; /* Center the cards */
-    gap: 20px; /* Reduce space between cards */
-    flex-wrap: wrap; /* Allows wrapping if needed */
-}
 
-/* Title styling */
 .h1 {
-    text-align: center;
-    font-weight: lighter;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Review section */
@@ -38,6 +31,10 @@ img {
     height: 200px;
 }
 
+.no-underline {
+  text-decoration: none;
+  color: black;
+}
 
 
 

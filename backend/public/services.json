@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Robe",
+      "color": "White",
+      "size": "M",
+      "price": 150,
+      "description": "Elegant wedding dress"
+    },
+    {
+      "name": "Catering",
+      "description": "Full event catering service",
+      "price": 500
+    },
+    {
+      "name": "Photography",
+      "description": "Professional photography for events",
+      "price": 300
+    },
+    {
+      "name": "Decoration",
+      "description": "Complete event decoration setup",
+      "price": 400
+    },
+    {
+      "name": "Music Band",
+      "description": "Live music performance for events",
+      "price": 600
+    }
+  ]
+  
