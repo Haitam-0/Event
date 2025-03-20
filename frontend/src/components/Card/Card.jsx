@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../Card/Card.css';
 
+<<<<<<< HEAD
 function Card() {
     const [events, setEvents] = useState([]);
 
@@ -26,6 +27,17 @@ function Card() {
                     </div>
                 ))}
             </div>
+=======
+function Card({ event }) {
+    return (
+        <div className="event-card">
+            <div 
+                className="event-image" 
+                style={{ backgroundImage: `url(http://localhost:5000/public/${event.image})` }} 
+            ></div>
+            <h3 className="event-name">{event.title}</h3>
+            <p className="event-info">{event.description}</p>
+>>>>>>> 4162428dde36f612ab39d0b01d280cc36ba3e310
         </div>
     );
 }
