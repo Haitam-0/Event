@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Main Container */
+.event-wrapper {
+    width: 100%;
+    padding: 40px; /* Increased padding for more space around the content */
+    margin-bottom: 60px; /* Added larger margin to the bottom of the container */
+}
+
+/* Event Image */
+.event-banner {
+    width: 95%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 40px auto; /* Increased margin for better spacing */
+    padding-top: 40px;
+    margin-bottom: 40px; /* Increased margin between sections */
+}
+
+/* Event Title */
+.event-title {
+    color: #333;
+    font-size: 70px; /* Increased font size for better visibility */
+    margin-bottom: 25px;
+}.h1 {
+    margin-top: 90px;
+    font-size: 50px;
+    color: #333;
+    text-align: left; /* Ensures the text is aligned to the left */
+    margin-left: 8%; /* Adds some left margin to prevent sticking to the edge */
+}
+/* Event Description */
+.event-description {
+    font-size: 1.4rem; /* Increased font size for better readability */
+    color: #666;
+    margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+/* Service List (Grid Layout for 3 by 3) */
+.service-list {
+    margin-left: 8%;
+    width: 85%;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 columns */
+    justify-content: center; /* Center the services */
+    margin-top: 60px; /* Increased margin to separate services from the event */
+}
+
+/* Service Card */
+.service-card {
+    width: 300px; /* Reduced width to make services smaller */
+    height: 300px; /* Reduced height to make services smaller */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Added slightly larger shadow */
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 1px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Service Image */
+.service-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Ensure Heading Margin is Reset */
+.localContainer{
+    margin-top: 70px;
+    border-radius: 15px;
+    width: 100%;
+    height: 550px;
+    background-color: #444;
+    text-align: center;
+}
+.local-h1{
+    color: white;
+    padding-top: 70px;
+}
+.img1{
+   margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.imgMom{
+    width: 270px;
+    height: 270px;
+}.review-div {
+    margin-left: 5%;
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Ensures even spacing between items */
+}
+.review-son{
+    border: 1px solid lightgray;
+    width: 45%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px; /* Adds space between rows */
+    margin-right: 5%;
+}
+.img2{
+    height: 150px;
+
+}
+.p2{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.retour-h1{
+    color: #444;
+    padding-top: 70px;
+}

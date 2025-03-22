@@ -1,14 +1,12 @@
 [
     {
       "name": "Robe",
-      "color": "White",
-      "size": "M",
       "price": 150,
       "description": "Elegant wedding dress"
     },
     {
-      "name": "Catering",
-      "description": "Full event catering service",
+      "name": "buffet",
+      "description": "Buffet personnalisable pour tout evenement",
       "price": 500
     },
     {
@@ -22,9 +20,15 @@
       "price": 400
     },
     {
-      "name": "Music Band",
+      "name": "Orchestre",
       "description": "Live music performance for events",
       "price": 600
-    }
+    },
+    {
+      "name": "DJ",
+      "description": "Live music performance for events",
+      "price": 600
+    },
+  9
   ]
   

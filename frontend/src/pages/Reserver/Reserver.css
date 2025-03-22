@@ -1,0 +1,97 @@
+/* Ajout d'une marge supérieure pour éviter que le formulaire ne touche le navbar */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Espacement du titre */
+.h11 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 50px;
+}
+
+/* Styles pour les labels */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+/* Styles pour les champs de texte et les selects */
+input[type="text"], select, input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Effet au focus */
+input[type="text"]:focus, select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Pour les champs de texte et selects, espace supplémentaire */
+input[type="text"], select, input[type="date"] {
+    box-sizing: border-box; /* Assure que le padding et la largeur sont pris en compte */
+}
+
+/* Espacement entre les éléments */
+input[type="text"]:focus, select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Pour le bouton (si tu en ajoutes un) */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Espacement entre le bas du formulaire et le footer */
+form {
+    margin-bottom: 50px; /* Ajout d'une marge inférieure pour l'espacement */
+}
+
+/* Style spécifique pour le champ de date */
+input[type="date"] {
+    cursor: pointer;
+    background-color: #fff;
+}
+/* Style pour le bouton "Créer l'événement" */
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
