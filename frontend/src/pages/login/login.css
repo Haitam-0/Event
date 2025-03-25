@@ -21,7 +21,7 @@
   /* Left side: Image */
   .login-image {
     width: 50%;
-    background: url("http://localhost:5000/marriage1.jpg") no-repeat center center/cover;
+    background: url("http://localhost:5000/public/local2.jpg") no-repeat center center/cover;
   }
   
   /* Right side: Form */

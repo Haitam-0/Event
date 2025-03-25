@@ -1,0 +1,136 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f5fa;
+}
+
+/* Main container */
+.signup-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #e8e8f5;
+}
+
+/* Left side: Image */
+.signup-image {
+    width: 50%;
+    background: url("http://localhost:5000/public/local2.jpg") no-repeat center center/cover;
+}
+
+/* Right side: Form */
+.signup-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Error and Success messages */
+.error-message,
+.success-message {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Title */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5548d9;
+    margin-bottom: 25px;
+}
+
+/* Form */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.2s ease-in-out;
+}
+
+input:focus {
+    border-color: #5548d9;
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #5548d9;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button[type="submit"]:hover {
+    background-color: #463ab5;
+}
+
+/* Already have an account */
+p {
+    margin-top: 15px;
+}
+
+p a {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .signup-image {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .signup-form {
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
+    }
+}

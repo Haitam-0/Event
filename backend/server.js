@@ -31,6 +31,7 @@ app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/events", require("./routes/eventRoutes"));
 
 app.use("/api/services" , require("./routes/servicesRoutes"))
+app.use("/api/createEvent" , require("./routes/createEventRoute"))
 
 app.use(errorHandler);
 

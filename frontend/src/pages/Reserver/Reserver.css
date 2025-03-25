@@ -1,10 +1,10 @@
 /* Ajout d'une marge supérieure pour éviter que le formulaire ne touche le navbar */
-form {
+.form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Fond blanc pour un meilleur contraste */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -12,75 +12,47 @@ form {
 .h11 {
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #333333; /* Couleur gris foncé pour le titre */
     margin-top: 50px;
 }
 
 /* Styles pour les labels */
-label {
+.label {
     font-size: 1rem;
     margin-bottom: 5px;
     display: block;
-    color: #555;
+    color: #555555; /* Couleur gris doux pour les labels */
 }
 
-/* Styles pour les champs de texte et les selects */
-input[type="text"], select, input[type="date"] {
+/* Styles pour les champs de texte, selects et date */
+.input-text, .select-input, .input-date {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Bordure gris clair */
     border-radius: 5px;
     font-size: 1rem;
-    color: #333;
+    color: #333333; /* Couleur foncée du texte */
+    background-color: #f9f9f9; /* Fond gris clair */
 }
 
 /* Effet au focus */
-input[type="text"]:focus, select:focus, input[type="date"]:focus {
+.input-text:focus, .select-input:focus, .input-date:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #007bff; /* Bordure bleue au focus */
+    background-color: #ffffff; /* Fond blanc pour une meilleure clarté */
 }
 
-/* Pour les champs de texte et selects, espace supplémentaire */
-input[type="text"], select, input[type="date"] {
-    box-sizing: border-box; /* Assure que le padding et la largeur sont pris en compte */
-}
-
-/* Espacement entre les éléments */
-input[type="text"]:focus, select:focus, input[type="date"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-/* Pour le bouton (si tu en ajoutes un) */
-button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+/* Style du champ de date */
+.input-date {
     cursor: pointer;
-    font-size: 1rem;
+    background-color: #f9f9f9; /* Gris clair */
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Espacement entre le bas du formulaire et le footer */
-form {
-    margin-bottom: 50px; /* Ajout d'une marge inférieure pour l'espacement */
-}
-
-/* Style spécifique pour le champ de date */
-input[type="date"] {
-    cursor: pointer;
-    background-color: #fff;
-}
 /* Style pour le bouton "Créer l'événement" */
 .btn {
-    padding: 10px 20px;
-    background-color: #28a745;
+    padding: 12px 20px;
+    background-color: #007bff; /* Bleu */
     color: white;
     border: none;
     border-radius: 5px;
@@ -93,5 +65,82 @@ input[type="date"] {
 }
 
 .btn:hover {
-    background-color: #218838;
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Conteneur des services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Style des éléments de service */
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.service-item:hover {
+    background: #e9ecef;
+}
+
+/* Styles des cases à cocher */
+.service-checkbox {
+    accent-color: #007bff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Styles des labels des services */
+.service-label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Espacement entre le bas du formulaire et le footer */
+.form {
+    margin-bottom: 50px;
+}
+/* Alert box styles */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Make sure it's on top of other elements */
+}
+
+/* Alert visible (when it's shown) */
+.alert.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation for alert */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

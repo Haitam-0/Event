@@ -1,0 +1,16 @@
+# Use Node.js with Alpine for a lightweight image
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package.json package-lock.json ./
+RUN npm install --production
+
+# Copy backend source code
+COPY . .
+
+# Expose port and start the Express server
+EXPOSE 5000
+CMD ["npm", "run" ,"dev"]

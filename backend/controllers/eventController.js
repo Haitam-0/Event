@@ -25,19 +25,28 @@ const getEvent = asyncHandler(async (req, res, next) => {
 // @route POST /api/events
 // @access Public
 const createEvent = asyncHandler(async (req, res, next) => {
-    const { name, description, picture, feedback, serviceToCall } = req.body;
+    const { name, description, picture, feedback, serviceToCall, price ,picture2 } = req.body;
 
-    if (!name || !picture) {
+    if (!name || !picture || !price) {
         res.status(400);
-        return next(new Error("Name and picture are required!"));
+        return next(new Error("Name, picture, and price are required!"));
+    }
+
+    // Ensure the price is a number
+    const parsedPrice = parseFloat(price);
+    if (isNaN(parsedPrice) || parsedPrice <= 0) {
+        res.status(400);
+        return next(new Error("Price must be a positive number"));
     }
 
     const event = await Event.create({
         name,
         description,
         picture,
+        picture2,
         feedback,
         serviceToCall,
+        price: parsedPrice
     });
 
     res.status(201).json({ message: "Event created successfully", event });

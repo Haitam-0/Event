@@ -30,9 +30,6 @@ function Home() {
     return (
         <>
             <div className="img">
-                <div className="input-search">
-                    <input type="text" placeholder="...Search" />
-                </div>
             </div><br /><br /><br />
             <h1 className="h1">NOS EVENEMENTS</h1>
             <div className="event-list">

@@ -39,7 +39,7 @@ function DetailEvent() {
                 <>
                     <div 
                         className="event-banner" 
-                        style={{ backgroundImage: `url("http://${event.picture}")` }} 
+                        style={{ backgroundImage: `url("http://${event.picture2}")` }} 
                         ></div>
                     <h1 className="event-title" >{event.name}</h1>
                     <p className="event-description">{event.description}</p>
